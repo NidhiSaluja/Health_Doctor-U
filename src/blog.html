@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Blogs
+        </title>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="apple-touch-icon" href="../assets/WhatsApp Image 2021-10-09 at 18.24.10.jpeg">
+        <link rel="icon" href="../assets/WhatsApp Image 2021-10-09 at 18.24.10.jpeg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+          @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+      @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i');
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700');
+          .navshadow{
+          margin-bottom: 5px;
+          box-shadow: 0px 15px 10px -15px grey;  
+      }
+      .navshadow nav div a{
+        color: black;
+        text-decoration: none;
+      }
+      
+      .flex{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 100px;
+      }
+      
+      .blogs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+      }
+      .blog-card{
+        flex: 0 1 auto;
+        width: 500px;
+        margin: 20px 60px;
+        box-shadow: 0 0 20px 8px #d0d0d0;
+        border-radius: 10px;
+      }
+      .blog-card:hover{
+        box-shadow: 0 0 20px 20px #d0d0d0;
+        cursor: pointer;
+      }
+      
+      
+      
+      
+      :root{
+        --bg: #001D66;
+        --title: #00257F;
+        --para-text: rgba(0,0,0,0.67);
+        --title-font: 'Josefin Slab', serif;
+        --text-font: 'PT Serif', Serif;
+        --width: 20em;
+      }
+      
+      
+      h1, h2, h3, h4, h5, h6{
+        color: var(--title);
+        text-transform: capitalize;
+        font-family: var(--title-font);
+      }
+      
+      section,
+      aside,
+      article,
+      div,
+      img{
+        box-sizing: border-box;
+      }
+      section img{
+        width: 100%;
+      }
+      section{
+        width: var(--width);
+        background: #fff;
+        padding: 20px;
+      }
+      section h3{
+        font-size: calc(var(--width)/10);
+      }
+      section p{
+        font-family: var(--text-font);
+        color: var(--para-text);
+        font-size: calc(var(--width)/20);
+      }
+      .date{
+        font-size: calc(var(--width)/25);
+      }
+      h1{
+        color: #fff;
+      }
+      
+      section a{
+        text-decoration: none;
+        color: var(--bg);
+        font-family: var(--title-font);
+        font-weight: 700;
+        font-size: calc(var(--width)/23);
+      }
+      
+      .flex > div > h2{
+        animation: mymove 5s infinite;
+       font-weight: 700;
+       font-size: 50px;
+        @keyframes mymove {
+        50% {text-shadow: 10px 20px 30px blue;}
+      }
+      }
+
+      * {
+  font-family: Open Sans;
+}
+
+footer section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+  font-weight:400;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #222;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+  font-weight:400;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  lightseagreen;
+    text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+      
+          </style>
+      </head>
+    
+    <body>
+        <div class="navshadow fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="aboutus1.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="blog.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="livevideo.html">Live Video<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="doctors.html">Connect with Doctors<span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Discussion Forum<span class="sr-only"></span></a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 mr-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  
+                  </form>
+                  <a href="login.html"><i class="fas fa-user fa-2x mr-2"></i></a>
+                  
+                </div>
+              </nav>
+        </div>
+        <div class="flex my-3">
+          <div class="dropdown">
+            <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">All</a>
+              <a class="dropdown-item" href="#">Covid-19</a>
+              <a class="dropdown-item" href="#">Cancer</a>
+              
+            </div>
+          </div>
+          <div>
+            <h2>Blog Feed</h2>
+          </div>
+          <div>
+            <button type="button" class="btn btn-success btn-lg">Upload Blog</button>
+          </div>
+          
+
+        </div>
+
+        
+       <div class="blogs">
+        
+       
+    <section class="blog-card">
+      <h3>Natural beauty. which is grateful in Bangladesh.</h3>
+      <img src="../assets/WhatsApp Image 2021-10-09 at 17.48.53.jpeg" alt="">
+      <p class="date">12th December, 2018</p>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+      <a href="">Read More</a>
+    </section>
+    <section class="blog-card">
+      <h3>Natural beauty. which is grateful in Bangladesh.</h3>
+      <img src="../assets/WhatsApp Image 2021-10-09 at 17.50.34.jpeg" alt="">
+      <p class="date">12th December, 2018</p>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+      <a href="">Read More</a>
+    </section>
+    <section class="blog-card">
+      <h3>Natural beauty. which is grateful in Bangladesh.</h3>
+      <img src="../assets/WhatsApp Image 2021-10-09 at 13.34.15.jpeg" alt="">
+      <p class="date">12th December, 2018</p>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+      <a href="">Read More</a>
+    </section>
+    <section class="blog-card">
+      <h3>Natural beauty. which is grateful in Bangladesh.</h3>
+      <img src="../assets/WhatsApp Image 2021-10-09 at 13.38.31.jpeg" alt="">
+      <p class="date">12th December, 2018</p>
+      <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+      <a href="">Read More</a>
+    </section>
+
+    
+       </div>
+       
+         <div style="display: flex; justify-content: flex-end;">       
+           <button class="btn btn-primary mx-5 my-3" style="text-align: center;">View All</button>
+         </div>
+              
+         <footer class="footer-distributed" style="opacity: 80%;">
+
+        <div class="footer-left">
+  
+          <h3>Doctor<span>&U</span></h3>
+  
+            <p class="footer-links">
+                <a href="aboutus1.html" class="link-1">Home</a>
+                
+                <a href="blog.html">Blogs</a>
+            
+                <a href="doctors.html">Connect with Doctors</a>
+                
+                <a href="aboutus1.html">Faq</a>
+                
+                <a href="#">Discussion Forum</a>
+            </p>
+  
+            <p class="footer-company-name">Company Name © 2021</p>
+          </div>
+
+          <div class="footer-center">
+
+              <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p><span>130, Sector 12</span> Khagariya, Jharkhand</p>
+              </div>
+
+              <div>
+                  <i class="fa fa-phone"></i>
+                  <p>+1.555.555.5555</p>
+              </div>
+
+              <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:abc@xyz.com">abc@xyz.com</a></p>
+              </div>
+  
+        </div>
+  
+        <div class="footer-right">
+  
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+            </p>
+  
+            <div class="footer-icons">
+  
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+  
+            </div>
+  
+        </div>
+  
+    </footer>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/db577aed91.js" crossorigin="anonymous"></script>
+        
+      </body>
+    </html>
